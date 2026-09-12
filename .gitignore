@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Entorno virtual
+.venv/
+
+# Variables de entorno / credenciales
+.env
+.env.*
