@@ -1282,6 +1282,7 @@ def actividad_7_vecinos_frontera(df, X_escalado, modelo, etiquetas):
 # 13. VISUALIZACION DE LOS SEGMENTOS
 # ------------------------------------------------------------
 
+
 def visualizar_segmentos(df, etiquetas):
 
     """
