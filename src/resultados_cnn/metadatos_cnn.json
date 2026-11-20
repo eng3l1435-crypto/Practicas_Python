@@ -1,0 +1,41 @@
+{
+    "proyecto": "SmartAcademy",
+    "etapa": 15,
+    "total_registros": 50000,
+    "forma_entrada": [
+        2,
+        3
+    ],
+    "canales": [
+        "calificaciones",
+        "asistencia"
+    ],
+    "momentos_temporales": [
+        "parcial1",
+        "parcial2",
+        "parcial3"
+    ],
+    "mapa_etiquetas": {
+        "Descendente": 0,
+        "Estable": 1,
+        "Favorable": 2
+    },
+    "media_normalizacion": [
+        6.525104999542236,
+        85.98633575439453
+    ],
+    "desviacion_normalizacion": [
+        2.2340524196624756,
+        9.541418075561523
+    ],
+    "semilla": 42,
+    "separacion": {
+        "entrenamiento": 0.7,
+        "validacion": 0.15,
+        "prueba": 0.15,
+        "metodo": "GroupShuffleSplit por estudiante"
+    },
+    "framework": "PyTorch",
+    "version_pytorch": "2.15.0+cpu",
+    "cuda_disponible": false
+}

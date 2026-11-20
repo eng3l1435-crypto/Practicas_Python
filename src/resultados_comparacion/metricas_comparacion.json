@@ -1,0 +1,21 @@
+{
+    "proyecto": "SmartAcademy",
+    "etapa": 17,
+    "modelos": {
+        "CNN_1D": {
+            "accuracy": 0.9993333333333333,
+            "precision_macro": 0.9994301104987345,
+            "recall_macro": 0.9993629968070085,
+            "f1_macro": 0.9993963553714668
+        },
+        "Random_Forest": {
+            "accuracy": 0.9997333333333334,
+            "precision_macro": 0.9997809899255365,
+            "recall_macro": 0.9997362869198313,
+            "f1_macro": 0.9997585502577205,
+            "tiempo_entrenamiento_segundos": 2.933329472999503,
+            "tiempo_prediccion_segundos": 0.3163250830002653
+        }
+    },
+    "observacion": "Ambos modelos utilizan los mismos conjuntos de datos. La CNN y Random Forest clasifican una tendencia derivada de las calificaciones observadas."
+}

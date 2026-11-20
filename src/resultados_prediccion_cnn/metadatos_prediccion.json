@@ -1,0 +1,62 @@
+{
+    "proyecto": "SmartAcademy",
+    "etapa": 18.1,
+    "tipo_problema": "Regresion",
+    "objetivo": "Prediccion de calificacion del parcial 3",
+    "total_registros": 50000,
+    "total_estudiantes": 10000,
+    "materias_por_estudiante": 5,
+    "variables_entrada": [
+        "parcial1",
+        "parcial2",
+        "asistencia_p1",
+        "asistencia_p2"
+    ],
+    "variable_objetivo": "parcial3",
+    "variables_excluidas": [
+        "parcial3 como entrada",
+        "asistencia_p3",
+        "promedio_final",
+        "tendencia",
+        "resultado",
+        "id_estudiante",
+        "materia"
+    ],
+    "forma_entrada": [
+        2,
+        2
+    ],
+    "separacion": {
+        "entrenamiento": 0.7,
+        "validacion": 0.15,
+        "prueba": 0.15,
+        "metodo": "GroupShuffleSplit",
+        "grupo": "id_estudiante"
+    },
+    "semilla": 42,
+    "normalizacion": {
+        "metodo": "Z-score",
+        "calculada_con": "Solo entrenamiento",
+        "media": [
+            [
+                [
+                    6.470844268798828
+                ],
+                [
+                    85.89521026611328
+                ]
+            ]
+        ],
+        "desviacion": [
+            [
+                [
+                    2.1600780487060547
+                ],
+                [
+                    9.560758590698242
+                ]
+            ]
+        ]
+    },
+    "advertencia": "Los datos son sinteticos. Los resultados deben interpretarse como una validacion experimental y no como evidencia de rendimiento con datos reales."
+}

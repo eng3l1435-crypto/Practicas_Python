@@ -1,0 +1,22 @@
+{
+    "proyecto": "SmartAcademy",
+    "etapa": 18.2,
+    "tipo_problema": "Regresion",
+    "mejor_epoca": 50,
+    "mejor_perdida_validacion": 0.04671907253861427,
+    "metricas_prueba": {
+        "MAE": 0.1460433304309845,
+        "MSE": 0.04633963108062744,
+        "RMSE": 0.21526641884099676,
+        "R2": 0.9915776252746582
+    },
+    "modelo_base": {
+        "MAE": 1.9630141258239746,
+        "RMSE": 2.345981400346969
+    },
+    "tiempos": {
+        "entrenamiento_segundos": 46.75149978300033,
+        "inferencia_segundos": 0.08095858199976647
+    },
+    "advertencia": "Datos sinteticos. Los resultados no representan una validacion con estudiantes reales."
+}

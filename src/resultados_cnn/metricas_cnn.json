@@ -1,0 +1,10 @@
+{
+    "mejor_epoca": 40,
+    "mejor_perdida_validacion": 0.004165933346748352,
+    "metricas_prueba": {
+        "accuracy": 0.9993333333333333,
+        "precision_macro": 0.9994301104987345,
+        "recall_macro": 0.9993629968070085,
+        "f1_macro": 0.9993963553714668
+    }
+}

@@ -1,0 +1,4 @@
+NUM_INICIALIZACIONES,inercia,silhouette,iteraciones_ejecutadas,ARI_respecto_a_5
+5,316.9915,0.5497,3,1.0
+20,316.9915,0.5497,3,1.0
+50,316.9915,0.5497,3,1.0
