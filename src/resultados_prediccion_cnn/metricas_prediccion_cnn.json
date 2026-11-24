@@ -15,8 +15,8 @@
         "RMSE": 2.345981400346969
     },
     "tiempos": {
-        "entrenamiento_segundos": 46.75149978300033,
-        "inferencia_segundos": 0.08095858199976647
+        "entrenamiento_segundos": 45.44202214100005,
+        "inferencia_segundos": 0.0747237639998275
     },
     "advertencia": "Datos sinteticos. Los resultados no representan una validacion con estudiantes reales."
 }

@@ -97,42 +97,10 @@ TOTAL_ESPERADO = 50000
 # ==============================================================
 
 def construir_uri():
-
     """
-    Construye la dirección de conexión de MongoDB Atlas.
-
-    Las credenciales se obtienen exclusivamente del archivo .env.
-
-    quote_plus permite utilizar caracteres especiales
-    en el usuario y la contraseña.
+    Construye la dirección de conexión local para MongoDB Compass.
     """
-
-    usuario = os.getenv("MONGO_USER")
-
-    password = os.getenv("MONGO_PASSWORD")
-
-    cluster = os.getenv("MONGO_CLUSTER")
-
-    if not usuario or not password or not cluster:
-
-        raise ValueError(
-            "Faltan variables de conexión en el archivo .env."
-        )
-
-    # Codificar usuario y contraseña.
-    usuario = quote_plus(usuario)
-
-    password = quote_plus(password)
-
-    # Construir dirección de MongoDB Atlas.
-    uri = (
-        f"mongodb+srv://{usuario}:{password}"
-        f"@{cluster}/"
-        "?retryWrites=true&w=majority"
-    )
-
-    return uri
-
+    return "mongodb://angel:mongo123@localhost:27017/?authSource=admin"
 
 # ==============================================================
 # 4. OBTENER NOMBRE DE LA BASE DE DATOS
@@ -165,11 +133,11 @@ def obtener_base_datos():
 def conectar_mongodb():
 
     """
-    Abre una conexión con MongoDB Atlas y verifica
+    Abre una conexión con MongoDB Compass y verifica
     que el servidor responda.
     """
 
-    print("\n1. CONECTANDO CON MONGODB ATLAS")
+    print("\n1. CONECTANDO CON MONGODB COMPASS")
 
     print("-" * 65)
 
@@ -181,15 +149,8 @@ def conectar_mongodb():
     cliente = MongoClient(
 
         uri,
-
-        # Certificados de confianza.
-        tlsCAFile=certifi.where(),
-
         # Tiempo máximo de espera.
-        serverSelectionTimeoutMS=20000,
-
-        # Reintentar escrituras cuando corresponda.
-        retryWrites=True
+        serverSelectionTimeoutMS=5000,
 
     )
 
@@ -313,12 +274,7 @@ def insertar_particion(
     cliente = MongoClient(
 
         uri,
-
-        tlsCAFile=certifi.where(),
-
         serverSelectionTimeoutMS=20000,
-
-        retryWrites=True
 
     )
 

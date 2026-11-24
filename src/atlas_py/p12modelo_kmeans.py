@@ -87,20 +87,20 @@ from sklearn.metrics import silhouette_score
 # 2. CONFIGURACIÓN DEL PROYECTO
 # ============================================================
 
-# Directorio donde se encuentra este módulo.
-DIRECTORIO_BASE = os.path.dirname(os.path.abspath(__file__))
+RUTA_PROYECTO = os.path.abspath(
+    os.path.join(os.path.dirname(__file__), "..", "..")
+)
+
+DIRECTORIO_RESULTADOS = os.path.join(
+    RUTA_PROYECTO,
+    "unidad3_fia",
+    "resultados_p10"
+)
 
 # Archivo generado en la etapa 1.
 ARCHIVO_DATOS = os.path.join(
-    DIRECTORIO_BASE,
-    "resultados_p10",
+    DIRECTORIO_RESULTADOS,
     "smartacademy_datos.csv"
-)
-
-# Directorio donde guardaremos los resultados.
-DIRECTORIO_RESULTADOS = os.path.join(
-    DIRECTORIO_BASE,
-    "resultados_p10"
 )
 
 # Directorio para guardar los modelos.
